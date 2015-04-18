@@ -7,6 +7,7 @@ This template...
 * Changes CSS to SASS
 * Changes ERB to Slim
 * Creates initializer for secret token (secret key base)
+* Configures dotenv
 * Configures Foreman
 * Configures Reek
 * Configures Rubocop
