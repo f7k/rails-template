@@ -7,12 +7,12 @@ default: &default
 
 development:
   <<: *default
-  database: <%= @app_const_base.underscore %>_development
+  database: <%= app_const_base.underscore %>_development
 
 test:
   <<: *default
-  database: <%= @app_const_base.underscore %>_test
+  database: <%= app_const_base.underscore %>_test
 
 production:
   <<: *default
-  database: <%= @app_const_base.underscore %>
+  database: <%= app_const_base.underscore %>

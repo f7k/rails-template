@@ -20,4 +20,4 @@ else
   File.write(token_file, token)
 end
 
-<%= @app_const_base %>::Application.config.secret_key_base = token
+<%= app_const_base %>::Application.config.secret_key_base = token
