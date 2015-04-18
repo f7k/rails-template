@@ -9,6 +9,7 @@ This template...
 * Creates initializer for secret token (secret key base)
 * Configures dotenv
 * Configures Foreman
+* Configures Overcommit
 * Configures Reek
 * Configures Rubocop
 * Configures RVM
@@ -34,3 +35,19 @@ It uses pg username `postres` and password `secret` by default.
 All files based on sample-files are gitignored.
 
 Remove symlink `blog/.ruby-gemset` if you don't want to use gemset.
+
+### Git hooks
+
+This template provides [config](rails_root/.overcommit.yml) for
+[overcommit](https://github.com/brigade/overcommit).
+
+You need to install overcommit if you want to enable git hooks:
+
+```
+$ cd blog
+$ bundle install overcommit
+$ overcommit --install
+```
+
+Be sure that you are using git 1.8.2 or later. Git supports pre-push hooks
+since 1.8.2.
