@@ -32,4 +32,4 @@ It uses pg username `postres` and password `secret` by default.
 
 All files based on sample-files are gitignored.
 
-Remove symlink `/project_root/.ruby-gemset` if you don't want to use gemset.
+Remove symlink `/blog/.ruby-gemset` if you don't want to use gemset.
