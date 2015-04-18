@@ -51,3 +51,8 @@ $ overcommit --install
 
 Be sure that you are using git 1.8.2 or later. Git supports pre-push hooks
 since 1.8.2.
+
+### Example
+
+Example application that was generated with this template:
+[example-blog](https://github.com/f7k/example-blog).
