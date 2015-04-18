@@ -1,5 +1,4 @@
 AllCops:
-
   Include:
     - "**/*.rake"
     - "Gemfile"
