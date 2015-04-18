@@ -82,11 +82,11 @@ inside "spec" do
 end
 
 environment <<-CODE
-config.generators do |g|
-      g.javascripts false
-      g.stylesheets false
-      g.helper_specs false
-      g.view_specs false
+config.generators do |gen|
+      gen.javascripts false
+      gen.stylesheets false
+      gen.helper_specs false
+      gen.view_specs false
     end
 CODE
 
