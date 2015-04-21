@@ -10,7 +10,6 @@ This template...
 * Configures dotenv
 * Configures Foreman
 * Configures Overcommit
-* Configures Reek
 * Configures Rubocop
 * Configures RVM
 * Installs RSpec environment
