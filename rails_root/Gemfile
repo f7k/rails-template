@@ -18,6 +18,8 @@ gem "uglifier"
 # gem "unicorn"
 
 group :development do
+  # An IRB alternative and runtime developer console
+  gem "pry-rails"
   # A Ruby static code analyzer, based on the community Ruby style guide.
   gem "rubocop", require: false
 end
@@ -35,8 +37,6 @@ group :development, :test do
   gem "foreman"
   # Manage translation and localization with static analysis, for Ruby i18n
   gem "i18n-tasks", require: false
-  # An IRB alternative and runtime developer console
-  gem "pry-rails"
   # Behaviour Driven Development for Ruby
   gem "rspec-rails", "~> 3.0"
 end
