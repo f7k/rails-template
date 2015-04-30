@@ -1,18 +1,16 @@
-ENV["RAILS_ENV"] ||= "test"
+ENV["RAILS_ENV"] = "test"
+require File.expand_path("../../config/environment", __FILE__)
+
+if ENV["COVERAGE"]
+  require "simplecov"
+  SimpleCov.start "rails"
+end
 
 require "spec_helper"
-require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
-require "simplecov"
-
-SimpleCov.start("rails") if ENV["COVERAGE"]
-
-Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
-  config.disable_monkey_patching!
   config.infer_spec_type_from_file_location!
-  config.order = :random
 end
