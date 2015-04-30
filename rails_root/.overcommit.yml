@@ -34,9 +34,6 @@ PreCommit:
     enabled: false
   BundleCheck:
     enabled: true
-  Reek:
-    enabled: true
-    command: ["bundle", "exec", "reek"]
   Rubocop:
     enabled: true
     command: ["bundle", "exec", "rubocop"]
